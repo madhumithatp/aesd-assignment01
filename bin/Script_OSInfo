@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo -e "User Information : " > Script_Info_OS.txt
+echo -e "$USER \n" >> Script_Info_OS.txt
+
+echo -e "Operating System Type : " >> Script_Info_OS.txt
+echo -e "$OSTYPE \n" >> Script_Info_OS.txt
+
+echo -e "Operating System Distribution : " >> Script_Info_OS.txt
+echo -e "$(lsb_release -i)\n" >> Script_Info_OS.txt
+
+echo -e "OS Version: " >> Script_Info_OS.txt
+echo -e "$(lsb_release -r) \n" >> Script_Info_OS.txt
+
+echo -e "Kernel Version : " >> Script_Info_OS.txt
+echo -e "$(uname -r) \n" >> Script_Info_OS.txt
+
+echo -e "Kernel GCC Build Version Version: " >> Script_Info_OS.txt
+echo -e "$(gcc --version) \n" >> Script_Info_OS.txt
+
+echo -e "Kernel Build Time: " >> Script_Info_OS.txt
+echo -e "$(uname -v)\n \n" >> Script_Info_OS.txt
+
+echo -e "System Architecture Information: " >> Script_Info_OS.txt
+echo -e "$(uname -i) \n" >> Script_Info_OS.txt
+
+echo -e "Information on File System Memory: " >> Script_Info_OS.txt
+echo -e "$(free -m) \n" >> Script_Info_OS.txt
+
